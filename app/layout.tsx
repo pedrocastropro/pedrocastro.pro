@@ -6,9 +6,9 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 
 export const metadata: Metadata = {
-  title: "Pedro Castro | Software Engineer & Digital Product Builder",
+  title: "Pedro Castro | AI Engineer & Automation Specialist",
   description:
-    "I build scalable digital products by combining code, AI, and strategy. From mobile apps to process automation, I help turn ideas into high-impact tools.",
+    "I automate processes and build AI-powered solutions that save time and multiply results. From workflow automation to intelligent planning systems.",
     generator: 'v0.dev'
 }
 

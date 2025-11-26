@@ -6,30 +6,30 @@ import { cn } from "@/lib/utils"
 /*expertiseAreas*/
 const expertiseAreas = [
   {
-    title: "iOS Development",
-    subtitle: "Native apps for iPhone, iPad, and Apple Watch — built with Swift and aligned with Apple's best practices.",
-    icon: Smartphone,
+    title: "Automatización con IA",
+    subtitle: "De tareas manuales a flujos inteligentes. Extraigo datos, proceso información y genero respuestas automáticas usando n8n, Python e IA.",
+    icon: Cpu,
     action: "#contact",
-    cta: "Learn More",
-    label: "Swift & Apple Best Practices",
-    buttonColor: "bg-[#0071e3] hover:bg-[#0077ed]",
-  },
-  {
-    title: "Lean Development",
-    subtitle: "From idea to roadmap — validate early, reduce risk, and focus on what really matters.",
-    icon: Search,
-    action: "#contact",
-    cta: "Learn More",
+    cta: "Automatiza tu negocio",
     label: "",
     buttonColor: "bg-[#0071e3] hover:bg-[#0077ed]",
   },
   {
-    title: "AI Solutions",
-    subtitle: "Bring intelligence into your product. I integrate AI to automate, personalize, and enhance experiences.",
-    icon: Cpu,
+    title: "Ingeniería de Procesos",
+    subtitle: "Identifico cuellos de botella, diseño flujos eficientes y convierto horas de trabajo manual en minutos automatizados.",
+    icon: Search,
     action: "#contact",
-    cta: "Discover AI",
-    label: "Built for Apple Intelligence",
+    cta: "Optimiza tus procesos",
+    label: "",
+    buttonColor: "bg-[#0071e3] hover:bg-[#0077ed]",
+  },
+  {
+    title: "Soluciones Inteligentes a Medida",
+    subtitle: "Desde sistemas de planificación deportiva con IA hasta análisis automatizado de contenido. Creo herramientas que piensan contigo, no solo ejecutan.",
+    icon: Smartphone,
+    action: "#contact",
+    cta: "Descubre qué puedo construir",
+    label: "",
     buttonColor: "bg-[#10b981] hover:bg-[#22c55e]",
   },
 ]
@@ -49,17 +49,17 @@ export function HeroSection() {
               backgroundImage: "linear-gradient(to right, #0095ff, #4285f4, #b967ff, #e94c89, #ff3b6b, #ff5630)",
             }}
           >
-            iOS&nbsp;Development · Lean&nbsp;Development · AI&nbsp;Solutions
+            AI&nbsp;Automation · Process&nbsp;Engineering · Intelligent&nbsp;Systems
           </p>
           <h1 className="mb-3 text-4xl font-medium tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
             Pedro Castro
           </h1>
           <h2 className="mb-4 text-xl font-medium text-gray-700 sm:text-2xl md:text-3xl">
-            Start Smart. Grow Smarter.
+            Automatiza lo rutinario. Potencia lo estratégico.
           </h2>
           <p className="mx-auto mb-12 max-w-2xl text-lg text-gray-600">
-          Whether you're starting from zero or refining something already built, I help founders and teams build, improve, and scale meaningful digital products — leveraging iOS, AI, and strategic business insight
-            
+          Ayudo a autónomos y nuevas empresas a multiplicar su productividad mediante automatización inteligente y soluciones de IA. Si lo haces manualmente más de 3 veces, probablemente pueda automatizarlo.
+
           </p>
           <Button
             className="rounded-full bg-[#0071e3] px-8 py-6 text-white hover:bg-[#0077ed]"
