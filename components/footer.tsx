@@ -1,7 +1,34 @@
 export function Footer() {
   return (
-    <footer className="bg-white py-8 text-center text-sm text-gray-500">
-      <p>Made with curiosity · Built by Pedro Castro · © 2025</p>
+    <footer className="bg-white border-t border-gray-100 py-16">
+      <div className="container max-w-6xl mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+
+          {/* Marca */}
+          <div className="text-center md:text-left">
+            <div className="text-2xl font-semibold text-gray-900 mb-2">Pedro Castro</div>
+            <div className="text-sm text-gray-500">AI Engineer & Automation Specialist</div>
+          </div>
+
+          {/* Links */}
+          <div className="flex gap-8 text-sm text-gray-600">
+            <a href="https://linkedin.com/in/pedrocastropro" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">
+              LinkedIn
+            </a>
+            <a href="https://github.com/pedrocastropro" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 transition-colors">
+              GitHub
+            </a>
+            <a href="mailto:hello@pedrocastro.pro" className="hover:text-gray-900 transition-colors">
+              Email
+            </a>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-12 pt-8 border-t border-gray-100 text-center text-sm text-gray-400">
+          © 2025 Pedro Castro. Made with curiosity.
+        </div>
+      </div>
     </footer>
   )
 }

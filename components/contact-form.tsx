@@ -56,71 +56,47 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mx-auto max-w-xl space-y-6">
-      <div className="space-y-4">
-        <div>
-          <Input
-            name="name"
-            placeholder="Name"
-            value={formState.name}
-            onChange={handleChange}
-            required
-            className="rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-sm focus:border-[#0071e3] focus:ring-[#0071e3]"
-          />
-        </div>
+    <form onSubmit={handleSubmit} className="space-y-6">
+      <Input
+        name="name"
+        placeholder="Tu nombre"
+        value={formState.name}
+        onChange={handleChange}
+        required
+        className="w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-base focus:outline-none focus:border-[#0066FF] transition-colors"
+      />
 
-        <div>
-          <Input
-            name="email"
-            type="email"
-            placeholder="Email"
-            value={formState.email}
-            onChange={handleChange}
-            required
-            className="rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-sm focus:border-[#0071e3] focus:ring-[#0071e3]"
-          />
-        </div>
+      <Input
+        name="email"
+        type="email"
+        placeholder="Tu email"
+        value={formState.email}
+        onChange={handleChange}
+        required
+        className="w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-base focus:outline-none focus:border-[#0066FF] transition-colors"
+      />
 
-        <div>
-          <Textarea
-            name="message"
-            placeholder="Your message"
-            value={formState.message}
-            onChange={handleChange}
-            required
-            className="min-h-[150px] rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-sm focus:border-[#0071e3] focus:ring-[#0071e3] dark:border-gray-700 dark:bg-gray-800"
-          />
-        </div>
-      </div>
+      <Textarea
+        name="message"
+        placeholder="¿Qué necesitas automatizar?"
+        value={formState.message}
+        onChange={handleChange}
+        required
+        rows={6}
+        className="w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-base focus:outline-none focus:border-[#0066FF] transition-colors resize-none"
+      />
 
-      <Button
+      <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full rounded-full bg-[#0071e3] px-8 py-6 text-white hover:bg-[#0077ed]"
+        className="w-full rounded-xl bg-[#0066FF] px-8 py-4 text-base font-medium text-white transition-all hover:bg-[#0052CC] disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {isSubmitting ? (
-          <span className="flex items-center gap-2">
-            <svg className="h-4 w-4 animate-spin" viewBox="0 0 24 24">
-              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-              <path
-                className="opacity-75"
-                fill="currentColor"
-                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-              />
-            </svg>
-            Sending...
-          </span>
-        ) : (
-          <span className="flex items-center gap-2">
-            Let’s talk
-            <Send className="h-4 w-4" />
-          </span>
-        )}
-      </Button>
+        {isSubmitting ? "Enviando..." : "Enviar mensaje"}
+      </button>
 
       {isSubmitted && (
-        <div className="mt-4 rounded-md bg-green-50 p-4 text-center text-green-800 ">
-          Thank you! Your message has been sent.
+        <div className="rounded-xl bg-green-50 border border-green-200 p-4 text-center text-green-800">
+          ¡Gracias! Tu mensaje ha sido enviado.
         </div>
       )}
     </form>
