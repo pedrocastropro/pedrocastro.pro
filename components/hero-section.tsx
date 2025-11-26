@@ -1,16 +1,16 @@
 import { ArrowRight } from "lucide-react"
 
-/*expertiseAreas*/
+/*expertiseAreas - Ordenado según customer journey (Pain → Solution → Results)*/
 const expertiseAreas = [
   {
     number: "01",
-    title: "Automatización con IA",
-    subtitle: "De tareas manuales a flujos inteligentes. Extraigo datos, proceso información y genero respuestas automáticas usando n8n, Python e IA.",
+    title: "Ingeniería de Procesos",
+    subtitle: "Identifico cuellos de botella, diseño flujos eficientes y convierto horas de trabajo manual en minutos automatizados.",
   },
   {
     number: "02",
-    title: "Ingeniería de Procesos",
-    subtitle: "Identifico cuellos de botella, diseño flujos eficientes y convierto horas de trabajo manual en minutos automatizados.",
+    title: "Automatización con IA",
+    subtitle: "De tareas manuales a flujos inteligentes. Extraigo datos, proceso información y genero respuestas automáticas usando n8n, Python e IA.",
   },
   {
     number: "03",
@@ -26,13 +26,13 @@ export function HeroSection() {
       <section className="relative flex min-h-screen flex-col items-center justify-center px-6 py-20">
         <div className="max-w-4xl w-full text-center space-y-6 sm:space-y-8">
 
-          {/* Badge sutil */}
+          {/* Badge - Exclusividad */}
           <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 px-3 sm:px-4 py-1.5 text-xs sm:text-sm text-gray-600">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            <span className="whitespace-nowrap">Disponible</span>
+            <span className="whitespace-nowrap">2-3 proyectos/mes</span>
           </div>
 
           {/* Nombre - responsivo */}

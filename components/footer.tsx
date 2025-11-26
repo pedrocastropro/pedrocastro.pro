@@ -26,7 +26,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="mt-10 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-100 text-center text-xs sm:text-sm text-gray-400">
-          © 2025 Pedro Castro. Made with curiosity.
+          © 2025 Pedro Castro · Construido con automatización. Obviamente.
         </div>
       </div>
     </footer>
