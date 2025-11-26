@@ -32,7 +32,7 @@ export function HeroSection() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            <span className="whitespace-nowrap">Auditoría IA GRATIS</span>
+            <span className="whitespace-nowrap">Consultoría IA GRATIS</span>
           </div>
 
           {/* Nombre - responsivo */}
@@ -57,7 +57,7 @@ export function HeroSection() {
               href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-[#0066FF] px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-medium text-white transition-all hover:bg-[#0052CC] active:scale-95 sm:hover:scale-105"
             >
-              Reservar auditoría
+              Reservar consultoría
             </a>
             <a
               href="#expertise"

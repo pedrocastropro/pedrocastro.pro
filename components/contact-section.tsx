@@ -7,7 +7,7 @@ export function ContactSection() {
 
         <div className="text-center mb-10 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 mb-3 sm:mb-4 px-4">
-            Auditoría IA GRATIS
+            Consultoría IA GRATIS
           </h2>
           <p className="text-base sm:text-lg text-gray-600 px-4 mb-4">
             Cuéntame en qué estás trabajando.

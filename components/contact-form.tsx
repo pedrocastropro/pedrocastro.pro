@@ -78,7 +78,7 @@ export function ContactForm() {
 
       <Textarea
         name="message"
-        placeholder="¿Qué necesitas automatizar?"
+        placeholder="¿qué problemas buscas resolver o qué mejoras deseas?"
         value={formState.message}
         onChange={handleChange}
         required
