@@ -26,13 +26,13 @@ export function HeroSection() {
       <section className="relative flex min-h-screen flex-col items-center justify-center px-6 py-20">
         <div className="max-w-4xl w-full text-center space-y-6 sm:space-y-8">
 
-          {/* Badge - Exclusividad */}
+          {/* Badge - Lead Magnet */}
           <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 px-3 sm:px-4 py-1.5 text-xs sm:text-sm text-gray-600">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            <span className="whitespace-nowrap">2-3 proyectos/mes</span>
+            <span className="whitespace-nowrap">Auditoría IA GRATIS</span>
           </div>
 
           {/* Nombre - responsivo */}
@@ -57,7 +57,7 @@ export function HeroSection() {
               href="#contact"
               className="inline-flex items-center justify-center rounded-full bg-[#0066FF] px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base font-medium text-white transition-all hover:bg-[#0052CC] active:scale-95 sm:hover:scale-105"
             >
-              Empezar proyecto
+              Reservar auditoría
             </a>
             <a
               href="#expertise"
