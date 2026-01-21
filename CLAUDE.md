@@ -2,11 +2,29 @@
 
 ## Project Overview
 
-**pedrocastro.pro** is a modern, single-page portfolio website showcasing Pedro Castro's expertise in iOS development, AI solutions, and lean product development. Built with Next.js 15 and React 19, it features a clean Apple-inspired design with a functional contact form and email integration.
+**pedrocastro.pro** is a modern portfolio website for Pedro Castro, AI Engineer specializing in IA automation for businesses. Built with Next.js 15 and React 19, it features a clean Apple-inspired design with lead generation focus.
 
-**Purpose**: Professional portfolio and lead generation landing page
-**Type**: Single-page application (SPA)
-**Target Audience**: Potential clients and collaborators
+**Purpose**: Lead generation for AI automation services and products
+**Type**: Multi-page application with service-specific landing pages
+**Target Audience**:
+- **Primary (Q1)**: Pymes 10-50 empleados, SaaS, e-commerce, servicios (Spain/LATAM)
+- **Secondary (Q2+)**: Startups and SaaS B2B needing AI products
+
+## Brand Positioning (Q1 2025)
+
+**Headline**: "AI Engineer | Automatización IA para empresas | Ex-iOS Developer"
+
+**Value Proposition**:
+- Quick wins en 2-3 semanas, no proyectos de 6 meses
+- ROI en 6-8 semanas
+- Código abierto, sin lock-in tecnológico
+
+**Services**:
+1. Consultoría IA (auditorías gratuitas 30 min)
+2. Automatización workflows (n8n, LangChain)
+3. Desarrollo productos IA (Q2+)
+
+**Stack**: n8n, LangChain, Python, TypeScript, OpenAI/Claude APIs
 
 ---
 
@@ -107,15 +125,16 @@ pedrocastro.pro/
 
 ### Hero Section
 
-**`components/hero-section.tsx`**
-- Main landing section with gradient text tags
-- Name, tagline, and CTA button
-- Three expertise cards in grid layout:
-  1. iOS Development (blue gradient)
-  2. Lean Development (white/gray gradient)
-  3. AI Solutions (gray gradient, full-width)
-- Apple-inspired design with hover effects
-- Links to #contact anchor
+**`components/hero-section.tsx`** (Legacy - to be replaced)
+- Original generic portfolio hero
+- Will be replaced by N8nHero for Q1 focus
+
+**`components/n8n/`** (Q1 Primary Components)
+- `hero.tsx` - Automation-focused hero with ROI messaging
+- `use-cases.tsx` - 4 automation use cases grid
+- `projects.tsx` - Delivered projects with results
+- `cta.tsx` - Final CTA with consultation booking
+- `index.tsx` - Portfolio section combining all n8n components
 
 **`components/hero-background.tsx`**
 - Client component ("use client")
@@ -208,10 +227,11 @@ pedrocastro.pro/
 
 ### Color Palette
 
-- **Primary**: Blue (#0071e3) - Apple-inspired
-- **Accent**: Green (#10b981)
-- **Destructive**: Red variants
-- **Background/Foreground**: Dynamic light/dark values
+- **Primary Blue**: #0066FF - All CTAs, buttons, interactive elements
+- **Primary Blue Dark**: #0052CC - Hover states
+- **Success Green**: #16A34A - Result highlights, positive metrics
+- **Neutrals**: Gray scale for text and backgrounds
+- **Background**: White (#FFFFFF) and subtle gray (#FAFAFA)
 
 ---
 
@@ -349,7 +369,38 @@ pnpm lint   # Run Next.js linter
 
 ---
 
-**Last Updated**: 2025-11-26
-**Project Version**: 1.0.0
+## Site Structure (Q1 2025)
+
+### Current Routes
+- `/` - Main landing (currently generic, to be updated)
+- `/n8n` - Automation services landing (Q1 focus)
+
+### Planned Structure
+```
+/                    → Hub personal (Q2: presents Pedro + routes to services)
+/automatizacion      → n8n automation landing (rename from /n8n)
+/productos           → AI products landing (Q2+: backend IA, custom solutions)
+```
+
+### Q1 Priority
+Focus on `/n8n` (or `/automatizacion`) as primary lead generation page.
+Main landing `/` should redirect or integrate automation content.
+
+---
+
+## Copy & Content
+
+All copy lives in `.project/copy para la web.md` - **edit copy document first, then implement in components**.
+
+Key messaging:
+- "Automatizaciones de IA que recuperan su inversión en 6-8 semanas"
+- "Consultoría gratuita" (not "auditoría")
+- "Solo acepto 3 proyectos nuevos al mes"
+- ROI-focused results with specific metrics
+
+---
+
+**Last Updated**: 2025-01-21
+**Project Version**: 2.0.0 (Q1 Rebrand)
 **Next.js Version**: 15.2.4
 **React Version**: 19

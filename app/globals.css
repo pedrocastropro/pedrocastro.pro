@@ -2,17 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  COLOR SYSTEM - Pedro Castro Brand
+
+  PRIMARY BLUE (#0066FF):
+  - All CTAs, buttons, and action links
+  - Interactive elements (focus states, hover)
+  - Accent highlights in text
+
+  Used consistently across ALL pages for unified brand.
+*/
+
 @layer base {
   :root {
-    /* Minimalist Color System - Apple/OpenAI inspired */
+    /* Brand Colors */
     --primary-blue: 220 100% 50%;        /* #0066FF */
     --primary-blue-dark: 220 100% 40%;   /* #0052CC */
+
+    /* Neutral Colors */
     --text-primary: 0 0% 11%;             /* #1D1D1F */
     --text-secondary: 0 0% 53%;           /* #86868B */
     --background: 0 0% 100%;              /* #FFFFFF */
     --background-subtle: 0 0% 98%;        /* #FAFAFA */
     --border-subtle: 0 0% 96%;            /* #F5F5F7 */
     --border: 0 0% 89%;                   /* #E3E3E3 */
+
+    /* Functional Colors */
+    --success-green: 142 76% 36%;        /* #16A34A */
+    --success-light: 142 76% 95%;        /* #F0FDF4 */
 
     /* Legacy shadcn variables (kept for compatibility) */
     --foreground: 0 0% 11%;

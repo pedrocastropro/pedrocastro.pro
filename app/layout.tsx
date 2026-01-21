@@ -1,4 +1,5 @@
 import type React from "react"
+import { Navbar } from "@/components/navbar"
 import type { Metadata } from "next/dist/lib/metadata/types/metadata-interface"
 import { Inter } from "next/font/google"
 import "./globals.css"
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   title: "Pedro Castro | AI Engineer & Automation Specialist",
   description:
     "I automate processes and build AI-powered solutions that save time and multiply results. From workflow automation to intelligent planning systems.",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -23,6 +24,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
+        <Navbar />
         {children}
       </body>
     </html>

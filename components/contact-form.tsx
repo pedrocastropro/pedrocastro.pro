@@ -8,7 +8,23 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Send } from "lucide-react"
 
-export function ContactForm() {
+interface ContactFormProps {
+  accentColor?: "blue" | "coral"
+}
+
+export function ContactForm({ accentColor = "blue" }: ContactFormProps) {
+  const colors = {
+    blue: {
+      focus: "focus:border-[#0066FF]",
+      button: "bg-[#0066FF] hover:bg-[#0052CC]",
+    },
+    coral: {
+      focus: "focus:border-[hsl(4,85%,67%)]",
+      button: "bg-[hsl(4,85%,67%)] hover:bg-[hsl(4,85%,57%)]",
+    },
+  }
+
+  const currentColors = colors[accentColor]
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -63,7 +79,7 @@ export function ContactForm() {
         value={formState.name}
         onChange={handleChange}
         required
-        className="w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-base focus:outline-none focus:border-[#0066FF] transition-colors"
+        className={`w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-base focus:outline-none ${currentColors.focus} transition-colors`}
       />
 
       <Input
@@ -73,23 +89,23 @@ export function ContactForm() {
         value={formState.email}
         onChange={handleChange}
         required
-        className="w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-base focus:outline-none focus:border-[#0066FF] transition-colors"
+        className={`w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-base focus:outline-none ${currentColors.focus} transition-colors`}
       />
 
       <Textarea
         name="message"
-        placeholder="¿qué problemas buscas resolver o qué mejoras deseas?"
+        placeholder="¿Qué tarea repetitiva te está robando más tiempo a ti o a tu equipo ahora mismo?"
         value={formState.message}
         onChange={handleChange}
         required
         rows={6}
-        className="w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-base focus:outline-none focus:border-[#0066FF] transition-colors resize-none"
+        className={`w-full px-6 py-4 bg-white border border-gray-200 rounded-xl text-base focus:outline-none ${currentColors.focus} transition-colors resize-none`}
       />
 
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full rounded-xl bg-[#0066FF] px-8 py-4 text-base font-medium text-white transition-all hover:bg-[#0052CC] disabled:opacity-50 disabled:cursor-not-allowed"
+        className={`w-full rounded-xl ${currentColors.button} px-8 py-4 text-base font-medium text-white transition-all disabled:opacity-50 disabled:cursor-not-allowed`}
       >
         {isSubmitting ? "Enviando..." : "Enviar mensaje"}
       </button>
